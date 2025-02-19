@@ -1,0 +1,60 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	width: 250px;
+	height: 250px;
+	position: relative;
+}
+
+.outer {
+	height: 250px;
+	width: 250px;
+	padding: 20px;
+	box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.3),
+		-3px -3px 10px -1px rgba(255, 255, 255, 0.7);
+	border-radius: 50%;
+}
+
+.inner {
+	height: 210px;
+	width: 210px;
+	box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+		inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+		-0.5px -0.5px 0 rgba(255, 255, 255, 1), 0.5px 0.5px 0 rgba(0, 0, 0, 0.15),
+		0 12px 10px -10px rgba(0, 0, 0, 0.05);
+	border-radius: 50%;
+}
+
+circle {
+	fill: none;
+	stroke: url(#GradientColor);
+	stroke-width: 20px;
+	stroke-dasharray: 720;
+	stroke-dashoffset: 720;
+	transform: rotate(-90deg);
+	transform-origin: 50% 50%;
+	animation: anim 2s linear forwards;
+}
+
+@keyframes anim {
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+}

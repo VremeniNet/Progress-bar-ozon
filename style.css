@@ -9,12 +9,15 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-family: 'Roboto';
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
 }
 
 .container {
+	display: flex;
+	flex-direction: column;
 	width: 250px;
-	height: 250px;
+	height: 60vh;
 	position: relative;
 }
 
@@ -25,7 +28,7 @@ body {
 	box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.3),
 		-3px -3px 10px -1px rgba(255, 255, 255, 0.7);
 	border-radius: 50%;
-	margin-bottom: 5vh;
+	margin-bottom: 10vh;
 }
 
 .inner {
@@ -148,4 +151,18 @@ input:checked + .slider {
 
 input:checked + .slider:before {
 	transform: translateX(30px);
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+	.container {
+		flex-direction: row;
+		width: 70vw;
+		height: 65vh;
+		gap: 40px;
+	}
+
+	.controls {
+		align-items: flex-start;
+		margin-top: 0;
+	}
 }

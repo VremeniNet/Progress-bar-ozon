@@ -16,14 +16,14 @@ body {
 .container {
 	display: flex;
 	flex-direction: column;
-	width: 250px;
+	width: 200px;
 	height: 60vh;
 	position: relative;
 }
 
 .outer {
-	height: 250px;
-	width: 250px;
+	height: 200px;
+	width: 200px;
 	padding: 20px;
 	box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.3),
 		-3px -3px 10px -1px rgba(255, 255, 255, 0.7);
@@ -32,8 +32,8 @@ body {
 }
 
 .inner {
-	height: 210px;
-	width: 210px;
+	height: 160px;
+	width: 160px;
 	box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
 		inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
 		-0.5px -0.5px 0 rgba(255, 255, 255, 1), 0.5px 0.5px 0 rgba(0, 0, 0, 0.15),
@@ -157,8 +157,8 @@ input:checked + .slider:before {
 	.container {
 		flex-direction: row;
 		width: 70vw;
-		height: 65vh;
-		gap: 40px;
+		height: 55vh;
+		gap: 60px;
 	}
 
 	.controls {

@@ -26,6 +26,27 @@
 				</defs>
 				<circle cx="125" cy="125" r="115" stroke-linecap="round" />
 			</svg>
+
+			<div class="controls">
+				<div class="input-block">
+					<label for="progressValue">Value</label>
+					<input
+						type="number"
+						id="progressValue"
+						min="0"
+						max="100"
+						value="65"
+					/>
+				</div>
+				<div class="toggle-block">
+					<label for="animate">Animate</label>
+					<input type="checkbox" id="animate" />
+				</div>
+				<div id="toggle-block">
+					<label for="hide">Hide</label>
+					<input type="checkbox" id="hide" />
+				</div>
+			</div>
 		</div>
 
 		<script src="./script.js"></script>

@@ -41,15 +41,18 @@ circle {
 	stroke: url(#GradientColor);
 	stroke-width: 20px;
 	stroke-dasharray: 720;
-	stroke-dashoffset: 720;
+	stroke-dashoffset: 252;
 	transform: rotate(-90deg);
 	transform-origin: 50% 50%;
-	animation: anim 2s linear forwards;
+	transition: stroke-dashoffset 0.5s linear;
 }
 
-@keyframes anim {
-	100% {
-		stroke-dashoffset: 0;
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
 	}
 }
 
@@ -57,4 +60,21 @@ svg {
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+
+.controls {
+	margin-top: 20px;
+}
+
+.input-block,
+.toggle-block {
+	margin-bottom: 10px;
+}
+
+input[type='number'] {
+	width: 50px;
+}
+
+input[type='checkbox'] {
+	margin-left: 10px;
 }

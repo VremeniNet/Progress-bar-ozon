@@ -16,23 +16,18 @@ document.getElementById('animate').addEventListener('change', function () {
 		svg.style.animation = 'none'
 	}
 })
+
 document.getElementById('hide').addEventListener('change', function () {
 	const container = document.querySelector('.container')
 	const hideCheckbox = document.getElementById('hide')
 
 	if (this.checked) {
-		container.style.pointerEvents = 'none'
-		container
-			.querySelectorAll('.controls, svg, .outer, .inner')
-			.forEach(element => {
-				element.style.visibility = 'hidden'
-			})
+		container.querySelectorAll('svg, .outer, .inner').forEach(element => {
+			element.style.visibility = 'hidden'
+		})
 	} else {
-		container.style.pointerEvents = 'auto'
-		container
-			.querySelectorAll('.controls, svg, .outer, .inner')
-			.forEach(element => {
-				element.style.visibility = 'visible'
-			})
+		container.querySelectorAll(' svg, .outer, .inner').forEach(element => {
+			element.style.visibility = 'visible'
+		})
 	}
 })

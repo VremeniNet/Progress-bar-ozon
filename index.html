@@ -5,6 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Progress Bar</title>
 		<link rel="stylesheet" href="./style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<div class="container">
@@ -29,7 +33,6 @@
 
 			<div class="controls">
 				<div class="input-block">
-					<label for="progressValue">Value</label>
 					<input
 						type="number"
 						id="progressValue"
@@ -37,14 +40,21 @@
 						max="100"
 						value="65"
 					/>
+					<label for="progressValue">Value</label>
 				</div>
 				<div class="toggle-block">
+					<label class="toggle">
+						<input type="checkbox" id="animate" />
+						<span class="slider"></span>
+					</label>
 					<label for="animate">Animate</label>
-					<input type="checkbox" id="animate" />
 				</div>
-				<div id="toggle-block">
+				<div class="toggle-block">
+					<label class="toggle">
+						<input type="checkbox" id="hide" />
+						<span class="slider"></span>
+					</label>
 					<label for="hide">Hide</label>
-					<input type="checkbox" id="hide" />
 				</div>
 			</div>
 		</div>

@@ -3,7 +3,7 @@ document.getElementById('progressValue').addEventListener('input', function () {
 	const circle = document.querySelector('circle')
 
 	// Рассчитываем длину дуги
-	const dashoffset = 720 - (720 * value) / 100
+	const dashoffset = 570 - (570 * value) / 100
 	circle.style.strokeDashoffset = dashoffset
 })
 

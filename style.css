@@ -45,8 +45,8 @@ circle {
 	fill: none;
 	stroke: url(#GradientColor);
 	stroke-width: 20px;
-	stroke-dasharray: 720;
-	stroke-dashoffset: 252;
+	stroke-dasharray: 570;
+	stroke-dashoffset: 199.5;
 	transform: rotate(-90deg);
 	transform-origin: 50% 50%;
 	transition: stroke-dashoffset 0.5s linear;
@@ -157,7 +157,7 @@ input:checked + .slider:before {
 	.container {
 		flex-direction: row;
 		width: 70vw;
-		height: 55vh;
+		height: 60vh;
 		gap: 60px;
 	}
 

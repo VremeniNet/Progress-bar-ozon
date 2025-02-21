@@ -44,8 +44,8 @@
       // Пример использования API
       const progressBar = document.querySelector('progress-bar');
 
-      // Установить значение прогресса на 75%
-      progressBar.setValue(75);
+      // Установить значение прогресса на 65%
+      progressBar.setValue(65);
 
       // Включить анимацию
       progressBar.setAnimate(true);

@@ -1,64 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Progress Bar</title>
-		<link rel="stylesheet" href="./style.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
 	</head>
 	<body>
-		<div class="container">
-			<div class="outer">
-				<div class="inner"></div>
-			</div>
+		<progress-bar></progress-bar>
 
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				version="1.1"
-				width="200px"
-				height="200px"
-			>
-				<defs>
-					<linearGradient id="GradientColor">
-						<stop offset="0%" stop-color="#0000FF" />
-						<stop offset="100%" stop-color="#0000CD" />
-					</linearGradient>
-				</defs>
-				<circle cx="100" cy="100" r="90" stroke-linecap="round" />
-			</svg>
+		<script src="progrees-bar.js"></script>
+		<script>
+			const progressBar = document.querySelector('progress-bar')
 
-			<div class="controls">
-				<div class="input-block">
-					<input
-						type="number"
-						id="progressValue"
-						min="0"
-						max="100"
-						value="65"
-					/>
-					<label for="progressValue">Value</label>
-				</div>
-				<div class="toggle-block">
-					<label class="toggle">
-						<input type="checkbox" id="animate" />
-						<span class="slider"></span>
-					</label>
-					<label for="animate">Animate</label>
-				</div>
-				<div class="toggle-block">
-					<label class="toggle">
-						<input type="checkbox" id="hide" />
-						<span class="slider"></span>
-					</label>
-					<label for="hide">Hide</label>
-				</div>
-			</div>
-		</div>
+			progressBar.setValue(65)
 
-		<script src="./script.js"></script>
+			progressBar.setAnimate(false)
+		</script>
 	</body>
 </html>
